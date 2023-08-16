@@ -1,10 +1,8 @@
+import Main from "./components/main";
+
 // メインページ
 const Home = () => {
-  return (
-    <div>
-      <div>Main</div>
-    </div>
-  );
+  return <Main />;
 };
 
 export default Home;

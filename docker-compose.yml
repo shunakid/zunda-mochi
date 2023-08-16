@@ -5,4 +5,4 @@ services:
     image: voicevox/voicevox_engine:nvidia-ubuntu20.04-latest
     ports:
       - "50021:50021"
-    # tty: false
+    tty: true
