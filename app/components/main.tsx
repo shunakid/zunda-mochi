@@ -1,12 +1,15 @@
 "use client";
 
 import { useRef, useState } from "react";
+
+import axios from "axios";
 import { CharacterType, MessageType } from "./types";
-import { TestMessages, Characters } from "./config";
+import { Characters } from "./config";
 import { ArrowPathIcon } from "@heroicons/react/24/solid";
 
 import CharacterSelect from "./character-select";
-import axios from "axios";
+import Scroll from "./scroll";
+import Character from "./character";
 
 // メインコンポーネント
 const Main = () => {
@@ -145,6 +148,10 @@ const Main = () => {
           required
         />
       </form>
+      {/* スクロール */}
+      <Scroll messages={messages} />
+      {/* イラスト表示 */}
+      <Character character={character} />
     </div>
   );
 };
