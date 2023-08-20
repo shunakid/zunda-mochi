@@ -12,3 +12,9 @@ export type CharacterType = {
   label: string;
   word: string;
 };
+
+// メッセージの型定義
+export type MessageType = {
+  text: string;
+  type: string;
+};
