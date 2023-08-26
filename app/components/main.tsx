@@ -139,14 +139,16 @@ const Main = () => {
 
       <form onSubmit={onSubmit}>
         {/* 入力フォーム */}
-        <input
-          className="w-full border-b py-2 px-3 focus:outline-none bg-transparent"
-          placeholder="Your question..."
-          ref={questionRef}
-          disabled={loading}
-          id="question"
-          required
-        />
+        <div className="fixed bottom-0 left-0 right-0 p-4 flex justify-center items-center">
+          <input
+            className="w-[752px] bg-gray-700 text-white rounded py-3 px-3 outline-none focus:bg-gray-800"
+            placeholder="何か質問してみてください"
+            ref={questionRef}
+            disabled={loading}
+            id="question"
+            required
+          />
+        </div>
       </form>
       {/* スクロール */}
       <Scroll messages={messages} />

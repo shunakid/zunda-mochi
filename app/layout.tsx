@@ -14,16 +14,14 @@ export default function RootLayout({
   return (
     <html>
       <body>
-        <div className="flex flex-col min-h-screen bg-gray-50 relative">
+        <div className="flex flex-col min-h-screen relative bg-slate-800">
           <Navigation />
-
+          <div className="h-full md:flex md:w-72 md:flex-col md:fixed md:inset-y-0 z-80 bg-gray-900 text-gray-500">
+            sidebar
+          </div>
           <main className="flex-1 container max-w-screen-sm mx-auto px-5 py-5">
             {children}
           </main>
-
-          <footer className="py-5">
-            <div className="text-center text-sm"></div>
-          </footer>
         </div>
       </body>
     </html>
