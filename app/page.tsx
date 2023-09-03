@@ -1,8 +1,10 @@
-import Main from "./components/main";
-
 // メインページ
-const Home = () => {
-  return <Main />;
+const Page = () => {
+  return (
+    <div className="h-full">
+      <div>メインページ</div>
+    </div>
+  );
 };
 
-export default Home;
+export default Page;

@@ -1,13 +1,11 @@
 "use client";
 
 import { createContext, useContext, useState } from "react";
-import { createClient } from "../utils/supabase-browser";
-
+import { createClient } from "../utils/supabase-server";
 import type { SupabaseClient } from "@supabase/auth-helpers-nextjs";
-import type { Database } from "../utils/database.types";
 
 type SupabaseContext = {
-  supabase: SupabaseClient<Database>;
+  supabase: SupabaseClient;
 };
 
 // コンテキスト
